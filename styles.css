@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Color palette
+#240041
+#900048
+#ff4057
+#ff8260  */
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #ff8260, #900048);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 1vh;
+}   
+
+.navbar ul li {
+    display: inline-block;
+    padding: 2vh 4vh;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.navbar ul li a:hover {
+    color: #240041;
+    transition: .3s;
+}
+
+/*Border elements */
+.border {
+    border: 0.6vh solid #900048;
+    border-radius: 10px;
+    margin: 2vh;
+    overflow: hidden;
+}
+
+/* Hero */
+span {
+    color: #ff4057;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 14vh;
+    margin: 4vh;
+}
+
+.hero-text p {
+    margin: 4vh;
+    font-size: 3vh;
+}
+
+.hero-img{
+    display: table;
+    padding: 2vh;
+}
+
+.hero img {
+    height: auto;
+    max-width: 65vh;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+figcaption {
+    text-align: center;
+    font-size: 2.7vh;
+    display: table-caption;
+    caption-side: bottom;
+    background: #fff;
+    padding: 0 5px 5px;
+}
+
+/* Education */
+.about h2 {
+    font-size: 5vh;
+    text-align: center;
+    margin: 5px
+}
+
+.about p {
+    font-size: 3vh;
+    text-align: left;
+    text-justify: inter-character;
+}
