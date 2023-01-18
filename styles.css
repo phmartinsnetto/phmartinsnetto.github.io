@@ -99,7 +99,7 @@ span {
 
 .hero-text p {
     margin: 4vh;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 .hero-img{
@@ -110,7 +110,7 @@ span {
 .hero img {
     height: auto;
     max-width: 65vh;
-    border-radius: 10px;
+    border-radius: 2vh;
     display: block;
     
 }
@@ -121,7 +121,7 @@ figcaption {
     display: table-caption;
     caption-side: bottom;
     background: #fff;
-    padding: 0 5px 5px;
+    padding: 0 2vh 2vh;
 }
 
 /* About */
@@ -130,16 +130,16 @@ figcaption {
 }
 
 .about h2 {
-    font-size: 5vh;
+    font-size: 5.5vh;
     text-align: center;
-    margin: 15px 30px 30px 30px;
+    margin: 3vh 6vh 6vh 6vh;
 }
 
 .about p {
-    font-size: 4vh;
+    font-size: 4.5vh;
     text-align: justify;
-    line-height: 40px;
-    margin: 0px 10px 30px 10px;
+    line-height: 7vh;
+    margin: 0vh 3vh 6vh 3vh;
 }
 
 
@@ -152,26 +152,27 @@ figcaption {
 
 .main-title {
     text-align: center;
-    margin: 20px auto 25px;
+    margin: 4.5vh auto 5vh;
     font-size: 4vh;
 }
 
 .title {
-    font-size: 3vh;
-    margin: 10px;
+    font-size: 3.5vh;
+    margin: 2vh;
 }
 
 .course-info {
-    margin: 10px auto auto 15px;
+    margin: 2vh auto auto 3vh;
+    font-size: 3vh;
 }
 
 #education ul li:last-of-type {
-    margin-bottom: 25px
+    margin-bottom: 5vh;
 }
 
 /*courses and skills */
 .skill-div p:last-of-type {
-    margin-bottom: 25px
+    margin-bottom: 5vh;
 }
 
 /* Languages */
@@ -189,18 +190,32 @@ figcaption {
 }
 
 #languages .course-info {
-    margin: 10px;
-    font-size: 3vh;
+    margin: 2vh;
+    font-size: 3.5vh;
 }
 
 /* footer */
 
 #contact h1, #contact p {
     color: white;
-    margin: 15px;
+    margin: 3vh;
 }
 
 #contact a:hover {
     color: #240041;
     transition: .3s;
+}
+
+
+/* for mobile */
+
+@media (max-width:750px) {
+    .hero {
+        display: block;
+    }
+
+    .hero-img {
+        display: inline block;
+        margin: auto;
+    }
 }
