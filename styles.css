@@ -16,15 +16,41 @@ ul {
     list-style: none;
 }
 
+/*body background animation */
+body {
+    background: linear-gradient(-45deg, #240041, #900048, #ff4057, #ff8260);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+}
+    
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+    
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 /* Navbar */
 .navbar {
-    background: linear-gradient(90deg, #ff8260, #900048);
+    background: linear-gradient(45deg,#ff8260,  #900048);
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
     padding-top: 1vh;
-}   
+}
+    
+
+   
 
 .navbar ul li {
     display: inline-block;
@@ -49,11 +75,20 @@ ul {
     border-radius: 10px;
     margin: 2vh;
     overflow: hidden;
+    background-color: white;
 }
 
 /* Hero */
 span {
-    color: #ff4057;
+    animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #ff8260; }
+  25% { color: #ff4057; }
+  50% { color: #900048; }
+  75% {color: #240041; }
+  100% { color: #ff8260; }
 }
 
 .hero {
@@ -98,15 +133,49 @@ figcaption {
     padding: 0 5px 5px;
 }
 
-/* Education */
+/* About */
+.about {
+    display:block;
+}
+
 .about h2 {
     font-size: 5vh;
     text-align: center;
-    margin: 5px
+    margin: 15px 30px 30px 30px;
 }
 
 .about p {
-    font-size: 3vh;
-    text-align: left;
-    text-justify: inter-character;
+    font-size: 4vh;
+    text-align: justify;
+    line-height: 40px;
+    margin: 0px 10px 30px 10px;
 }
+
+
+/* Education */
+#div-edu {
+    display:flex;
+    justify-content: center;
+}
+
+.main-title {
+    text-align: center;
+    margin: 20px auto 25px;
+    font-size: 4vh;
+}
+
+.title {
+    font-size: 3vh;
+    margin: 10px;
+}
+
+.course-info {
+    margin: 10px auto auto 15px;
+}
+
+#education ul li:last-of-type {
+    margin-bottom: 25px
+}
+
+
+
