@@ -18,24 +18,18 @@ ul {
 
 /*body background animation */
 body {
-    background: linear-gradient(-45deg, #240041, #900048, #ff4057, #ff8260);
+    /*background: linear-gradient(-45deg, #240041, #900048, #ff4057, #ff8260);*/
     background-size: 400% 400%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 15s ease infinite;
     height: 100vh;
 }
     
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    
-    50% {
-        background-position: 100% 50%;
-    }
-    
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-color: #ff8260; }
+  25% { background-color: #ff4057; }
+  50% { background-color: #900048; }
+  75% {background-color: #240041; }
+  100% { background-color: #ff8260; }
 }
 
 
@@ -48,16 +42,13 @@ body {
     justify-content: space-evenly;
     padding-top: 1vh;
 }
-    
-
-   
 
 .navbar ul li {
     display: inline-block;
     padding: 2vh 4vh;
 }
 
-.navbar ul li a {
+.navbar a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -80,7 +71,7 @@ body {
 
 /* Hero */
 span {
-    animation: color-change 5s infinite;
+    animation: color-change 15s ease infinite;
 }
 
 @keyframes color-change {
@@ -156,6 +147,7 @@ figcaption {
 #div-edu {
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 
 .main-title {
@@ -177,5 +169,38 @@ figcaption {
     margin-bottom: 25px
 }
 
+/*courses and skills */
+.skill-div p:last-of-type {
+    margin-bottom: 25px
+}
+
+/* Languages */
+.lang-div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
 
 
+
+#languages .title {
+    font-size: 4.5vh;
+}
+
+#languages .course-info {
+    margin: 10px;
+    font-size: 3vh;
+}
+
+/* footer */
+
+#contact h1, #contact p {
+    color: white;
+    margin: 15px;
+}
+
+#contact a:hover {
+    color: #240041;
+    transition: .3s;
+}
