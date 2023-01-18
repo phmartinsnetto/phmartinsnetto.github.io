@@ -214,6 +214,11 @@ figcaption {
         display: block;
     }
 
+    .hero-text h1 {
+        font-size: 11vh;
+        margin: 1vh;
+    }
+
     .hero-img {
         display: inline block;
         margin: auto;
