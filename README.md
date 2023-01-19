@@ -1,2 +1,4 @@
 # portfolio_html-css
-A portfolio webpage using html and css
+A static portfolio webpage using html and css.
+
+Access through: https://phmartinsnetto.github.io/
